@@ -1,8 +1,8 @@
 # 1 Setup Project
 
-`npx create-react-app <project-name>`
-`cd <project-name>`
-`npm start` or `npm run start` or `npx react-scripts start`
+-`npx create-react-app <project-name>`
+-`cd <project-name>`
+-`npm start` or `npm run start` or `npx react-scripts start`
 
 -auto open browser localhost:3000
 
