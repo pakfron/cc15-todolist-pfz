@@ -5,7 +5,7 @@ $grey-light: #eaeaea;
 $grey-dark: #808080;
 $white: #fff;
 $header-height: 60px;
-$sidebar-width: 300px;
+$sidebar-width: 350px;
 
 *,
 *::after,
@@ -13,6 +13,8 @@ $sidebar-width: 300px;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    list-style: none;
+    
 }
 
 html {

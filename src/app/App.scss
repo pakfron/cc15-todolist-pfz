@@ -45,4 +45,38 @@ $sidebar-width: 300px;
 
 // HEADER
 
+.sidebar {
+  position: sticky;
 
+  // control-child
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px;
+  background-color: wheat;
+  height: calc(100vh - $header-height);
+}
+
+.list {
+ 
+ 
+  gap: 5px;
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+      background-color: $grey-dark;
+    }
+  }
+  &__icon {
+  }
+
+  &__text {
+  font-weight: 400;
+  }
+}
