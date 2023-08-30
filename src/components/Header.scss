@@ -1,0 +1,31 @@
+@import "../index.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: $primary;
+  height: $header-height;
+  padding: 5px 20px;
+
+  &__logo {
+    display: flex;
+    font-size: 2.4rem;
+    color: $white;
+  }
+
+  &__text {
+    flex: 1;
+    color: $white;
+    & > h1 {
+      font-size: 2.4rem;
+      display: inline;
+    }
+  }
+  &__search {
+    display: flex;
+    min-width: 300px;
+  }
+}
+
