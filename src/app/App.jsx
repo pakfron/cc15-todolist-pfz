@@ -1,29 +1,28 @@
-import "../components/Header";
-
-import { FaInbox, FaCalendar, FaCalendarAlt } from "react-icons/fa";
-import Header from "../components/Header";
-import "./App.scss";
-import ListItem from "../components/Listitem";
+// Dependencies
+import './App.scss';
+import AppBar from '../components/Common/AppBar/AppBar';
+import SideBar from '../components/SideBar/SideBar';
+import TodoHeader from '../components/Todo/TodoHeader';
+import TodoCreate from '../components/Todo/TodoCreate';
+import TodoLists from '../components/Todo/TodoLists';
+import { Button } from '../components/Common/Button/Button';
 
 function App() {
   return (
-    <div className="todo">
-      <div className="todo__header">
-        <Header />
+    <div className='todo'>
+      <div className='todo__header'>
+        <AppBar />
       </div>
-      <div className="todo__sidebar">
-        <aside className="sidebar">
-          <section className="sidebar__category">
-            <ul className="list">
-              <ListItem text="Inbox" icon={<FaInbox className="list__item__icon"/>} />
-              <ListItem text="Today" icon={<FaCalendar className="list__item__icon"/>} />
-              <ListItem text="Next 7 day" icon={<FaCalendarAlt className="list__item__icon"/>} />
-            </ul>
-          </section>
-          <section className="sidebar__category">2</section>
-        </aside>
+      <div className='todo__sidebar'>
+        <SideBar />
       </div>
-      <div className="todo__content">TodoContent</div>
+      <div className='todo__content'>
+        <main className='todo__container'>
+          <TodoHeader />
+          <TodoCreate />
+          <TodoLists />
+        </main>
+      </div>
     </div>
   );
 }
